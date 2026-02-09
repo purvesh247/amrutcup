@@ -1,0 +1,301 @@
+{
+  "123Toronto": {
+    "title": "Kishori Yuvati Amrut Cup 2025 - Canada Regional",
+    "description": "Join us for the Diwali celebrations in Toronto!",
+    "amount": 25,
+    "lateFeeStart": "Monday, February 17, 2025",
+    "lateFeeFeature": false,
+    "earlyBirdLastDate": "Sunday, February 16, 2025",
+    "lateFee": "null",
+    "centreName": "Toronto",
+    "eventInfo": {
+      "date": "Monday, May 20, 2025",
+      "registrationLastDate": "Tuesday, May 13, 2025",
+      "time": "11am - 4pm",
+      "location": "BAPS Shri Swaminarayan Mandir - Toronto",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$30 per child",
+        "late": "$50 per child (starts Feb 17, 2025)",
+        "onSite": "$35 per child"
+      }
+    }
+  },
+  "123Scarborough": {
+    "title": "Amrut Cup 2025 - Scarborough",
+    "lateFeeFeature": false,
+    "description": "Join us for the Diwali celebrations in Toronto!",
+    "amount": 30,
+    "lateFeeStart": "Monday, February 17, 2025",
+    "earlyBirdLastDate": "Sunday, February 16, 2025",
+    "lateFee": "null",
+    "centreName": "Scarborough",
+    "eventInfo": {
+      "date": "Sunday, June 15, 2025",
+      "registrationLastDate": "Sunday, May 31, 2025",
+      "time": "11am - 4pm",
+      "location": "Woodbridge Sports Dome, 7501 Martin Grove Rd, Woodbridge, ON L4L 9E4",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$30 per child",
+        "late": "$50 per child (starts Feb 17, 2025)",
+        "onSite": "$35 per child"
+      }
+    }
+  },
+  "111vancouver": {
+    "title": "Yogi Cup - Vancouver",
+    "lateFeeFeature": false,
+    "description": "Celebrate Diwali with us in Vancouver!",
+    "amount": 15,
+    "lateFeeStart": "Monday, October 28, 2024",
+    "lateFee": 20,
+    "centreName": "Vancouver",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 3, 2024",
+      "date": "Saturday, November 9, 2024",
+      "time": "10am - 3pm",
+      "location": "BAPS Shri Swaminarayan Mandir, Vancouver",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$15 per child",
+        "late": "$20 per child (starts Monday, October 28, 2024)",
+        "onSite": "$20 per child"
+      }
+    }
+  },
+  "111calgary": {
+    "title": "Yogi Cup - Calgary",
+    "lateFeeFeature": false,
+    "description": "Celebrate Diwali with us in Calgary!",
+    "amount": 20,
+    "lateFeeStart": "Monday, October 28, 2024",
+    "lateFee": 25,
+    "centreName": "Calgary",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 3, 2024",
+      "date": "Saturday, November 9, 2024",
+      "time": "10am - 3pm",
+      "location": "BAPS Shri Swaminarayan Mandir, Calgary",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$20 per child",
+        "late": "$25 per child (starts Monday, October 28, 2024)",
+        "onSite": "$25 per child"
+      }
+    }
+  },
+  "111edmonton": {
+    "title": "Yogi Cup - Edmonton",
+    "lateFeeFeature": false,
+    "description": "Celebrate Diwali with us in Edmonton!",
+    "amount": 20,
+    "lateFeeStart": "Monday, November 4, 2024",
+    "lateFee": 30,
+    "centreName": "Edmonton",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 10, 2024",
+      "date": "Saturday, November 16, 2024",
+      "time": "10am - 3pm",
+      "location": "BAPS Shri Swaminarayan Mandir, Edmonton",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$20 per child",
+        "late": "$30 per child (starts Monday, November 4, 2024)",
+        "onSite": "$30 per child"
+      }
+    }
+  },
+  "regina": {
+    "title": "Amrut Cup - Regina",
+    "lateFeeFeature": true,
+    "description": "Celebrate Diwali with us in Regina!",
+    "amount": 5,
+    "lateFeeStart": "Tuesday, August 19, 2025",
+    "regularFeeEnds": "Monday, August 18, 2025",
+    "lateFee": 10,
+    "centreName": "Regina",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, August 24, 2025",
+      "date": "Saturday, August 30, 2025",
+      "time": "10am - 3pm",
+      "location": "Echo Valley Provincial Park (SK-210, Fort Qu'Appelle, SK S0G 1S0)",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$10 per child",
+        "late": "$15 per child (starts Monday, October 28, 2024)",
+        "onSite": "$15 per child"
+      }
+    }
+  },
+  "333saskatoon": {
+    "title": "Yogi Cup - Saskatoon",
+    "lateFeeFeature": false,
+    "description": "Celebrate Diwali with us in Saskatoon!",
+    "amount": 20,
+    "lateFeeStart": "Monday, November 11, 2024",
+    "lateFee": 25,
+    "centreName": "Saskatoon",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 17, 2024",
+      "date": "Saturday, November 23, 2024",
+      "time": "10am - 3pm",
+      "location": "BAPS Shri Swaminarayan Mandir, Saskatoon",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$20 per child",
+        "late": "$25 per child (starts Monday, November 11, 2024)",
+        "onSite": "$25 per child"
+      }
+    }
+  },
+  "333brandon": {
+    "title": "Yogi Cup - Brandon",
+    "description": "Celebrate Diwali with us in Brandon!",
+    "lateFeeFeature": false,
+    "amount": 10,
+    "lateFeeStart": "Monday, October 28, 2024",
+    "lateFee": 15,
+    "centreName": "Brandon",
+    "gradeOptions": [
+      { "value": "", "label": "Select Grade" },
+      { "value": "KG", "label": "Grade KG" },
+      { "value": "1", "label": "Grade 1" },
+      { "value": "2", "label": "Grade 2" },
+      { "value": "3", "label": "Grade 3" },
+      { "value": "4", "label": "Grade 4" },
+      { "value": "5", "label": "Grade 5" },
+      { "value": "6", "label": "Grade 6" },
+      { "value": "7", "label": "Grade 7" },
+      { "value": "8", "label": "Grade 8" }
+    ],
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 3, 2024",
+      "date": "Saturday, November 9, 2024",
+      "time": "10am - 3pm",
+      "location": "BAPS Shri Swaminarayan Mandir, Brandon",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$10 per child",
+        "late": "$15 per child (starts Monday, October 28, 2024)",
+        "onSite": "$15 per child"
+      }
+    }
+  },
+  "555winnipeg": {
+    "title": "Yogi Cup - Winnipeg",
+    "description": "Celebrate Diwali with us in Winnipeg!",
+    "lateFeeFeature": false,
+    "amount": 20,
+    "lateFeeStart": "Monday, October 28, 2024",
+    "lateFee": 25,
+    "centreName": "Winnipeg",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 3, 2024",
+      "date": "Saturday, November 9, 2024",
+      "time": "10am - 3pm",
+      "location": "BAPS Shri Swaminarayan Mandir, Winnipeg",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$20 per child",
+        "late": "$25 per child (starts Monday, October 28, 2024)",
+        "onSite": "$25 per child"
+      }
+    }
+  },
+  "666windsor": {
+    "title": "Yogi Cup - Windsor",
+    "description": "Celebrate Diwali with us in Windsor!",
+    "lateFeeFeature": false,
+    "amount": 25,
+    "lateFeeStart": "Sunday, November 3, 2024",
+    "lateFee": 30,
+    "centreName": "Windsor",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 10, 2024",
+      "date": "Saturday, November 16, 2024",
+      "time": "10am - 3pm",
+      "location": "WF Herman Academy, 1905 Bernard rd, Windsor, N8W 0A8 ",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$25 per child",
+        "late": "$30 per child (starts Sunday, November 3, 2024)",
+        "onSite": "$30 per child"
+      }
+    }
+  },
+  "cambridge": {
+    "title": "Yogi Cup - Cambridge",
+    "amount": 25,
+    "lateFeeFeature": false,
+    "lateFeeStart": "Sunday, November 9, 2024",
+    "lateFee": "null",
+    "centreName": "Cambridge",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, May 31, 2025",
+      "date": "Sunday, June 15, 2025",
+      "time": "9am onwards",
+      "location": "BAPS Shri Swaminarayan Mandir, Cambridge",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$25 per child",
+        "late": "$30 per child (starts Sunday, November 9, 2024)",
+        "onSite": "$30 per child"
+      }
+    }
+  },
+  "555ottawa": {
+    "title": "Yogi Cup - Ottawa",
+    "lateFeeFeature": false,
+    "description": "Celebrate Diwali with us in Ottawa!",
+    "amount": 25,
+    "lateFeeStart": "Monday, October 28, 2024",
+    "lateFee": 30,
+    "centreName": "Ottawa",
+    "gradeOptions": [
+      { "value": "", "label": "Select Grade" },
+      { "value": "KG", "label": "Grade KG" },
+      { "value": "1", "label": "Grade 1" },
+      { "value": "2", "label": "Grade 2" },
+      { "value": "3", "label": "Grade 3" },
+      { "value": "4", "label": "Grade 4" },
+      { "value": "5", "label": "Grade 5" },
+      { "value": "6", "label": "Grade 6" },
+      { "value": "7", "label": "Grade 7" },
+      { "value": "8", "label": "Grade 8" }
+    ],
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 3, 2024",
+      "date": "Saturday, November 9, 2024",
+      "time": "10am - 3pm",
+      "location": "Nepean Sportsplex (Hall A & B) 1701 Woodroffe Ave, Nepean, ON K2G 1W2",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$25 per child",
+        "late": "$30 per child (starts Monday, October 28, 2024)",
+        "onSite": "$30 per child"
+      }
+    }
+  },
+  "5555nahq": {
+    "title": "Yogi Cup - NAHQ",
+    "description": "Celebrate Diwali with us in NAHQ!",
+    "lateFeeFeature": false,
+    "amount": 1,
+    "lateFeeStart": "Sunday, October 27, 2024",
+    "lateFee": 1,
+    "centreName": "Ottawa",
+    "eventInfo": {
+      "registrationLastDate": "Sunday, November 3, 2024",
+      "date": "Saturday, November 9, 2024",
+      "time": "10am - 3pm",
+      "location": "Nepean Sportsplex (Hall A & B) 1701 Woodroffe Ave, Nepean, ON K2G 1W2",
+      "details": "Celebrate with fun activities, rides, and crafts. Enjoy traditional foods and entertainment with other kids.",
+      "fees": {
+        "regular": "$25 per child",
+        "late": "$30 per child (starts Sunday, October 27, 2024)",
+        "onSite": "$35 per child"
+      }
+    }
+  }
+}
