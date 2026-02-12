@@ -208,17 +208,17 @@ const SummaryPage = ({
             </div> */}
           </div>
         </div>
-        <div className="flex justify-center mt-6">
-          <button
-            onClick={onEdit}
-            className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition duration-300"
-            disabled={
-              paymentStatus === "success" || paymentStatus === "processing"
-            }
-          >
-            Edit Information
-          </button>
-        </div>
+        {(paymentStatus === "pending" || paymentStatus === "error") && (
+          <div className="flex justify-center mt-6">
+            <button
+              onClick={onEdit}
+              className="bg-orange-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition duration-300 disabled:opacity-50"
+              disabled={paymentStatus === "processing"}
+            >
+              Edit Information
+            </button>
+          </div>
+        )}
       </section>
 
       <section className="mb-8">
