@@ -1,13 +1,17 @@
 
 
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LiabilityForm from "./LiabilityForm";
 import SummaryPage from "./SummaryPage";
 
-const Player = ({ centreData }) => {
+const Player = ({ centreData, onStepChange }) => {
+  // Set initial step to 2 (Registration) when component mounts
+  useEffect(() => {
+    if (onStepChange) onStepChange(2);
+  }, [onStepChange]);
   const [playerInfo, setPlayerInfo] = useState({
-    centre: centreData.centreName,
+    centre: centreData?.centreName ?? centreData?.centre ?? "",
     firstName: "",
     lastName: "",
     email: "",
@@ -79,8 +83,8 @@ const Player = ({ centreData }) => {
   };
 
   const handleSubmit = () => {
-    console.log('******** handle submit', validateForm());
     if (validateForm()) {
+      if (onStepChange) onStepChange(3); // Move to payment step
       setShowSummary(true);
     }
   };
@@ -88,11 +92,11 @@ const Player = ({ centreData }) => {
   const handleConfirmSubmit = () => {};
 
   const handleEditInformation = () => {
+    if (onStepChange) onStepChange(2); // Back to registration step
     setShowSummary(false);
   };
 
   if (showSummary) {
-    console.log("showSummary:", showSummary);
     return (
       <SummaryPage
         centreData={centreData}
@@ -106,7 +110,7 @@ const Player = ({ centreData }) => {
 
   return (
     <div className="p-6 bg-white shadow-md rounded-lg">
-      <h2 className="text-2xl font-bold mb-4 text-white bg-orange-500 p-1 rounded-lg shadow-lg">
+      <h2 className="text-2xl font-bold mb-4 text-white bg-orange-500 p-1 rounded-lg shadow-lg text-center">
         Participant Information
       </h2>
 
@@ -225,6 +229,7 @@ const Player = ({ centreData }) => {
             }`}
           >
             <option value="">Select Age Group</option>
+            <option value="14-17">14-17</option>
             <option value="18-20">18-20</option>
             <option value="21-30">21-30</option>
             <option value="31-40">31-40</option>
@@ -418,12 +423,14 @@ const Player = ({ centreData }) => {
       </div>
 
       {/* Submit Button */}
-      <button
-        onClick={handleSubmit}
-        className="mt-6 px-4 py-2 text-white bg-orange-500 rounded-lg shadow-lg hover:bg-orange-600"
-      >
-        Continue
-      </button>
+      <div className="flex justify-center mt-6">
+        <button
+          onClick={handleSubmit}
+          className="px-4 py-2 text-white bg-orange-500 rounded-lg shadow-lg hover:bg-orange-600"
+        >
+          Continue
+        </button>
+      </div>
     </div>
   );
 };

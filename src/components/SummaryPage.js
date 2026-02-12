@@ -14,33 +14,22 @@ const SummaryPage = ({
   const [confirmationId, setConfirmationId] = useState(null);
   const [retryCount, setRetryCount] = useState(0);
 
-  const centerName = centreData.centreName;
-  const registrationFee = centreData.amount;
-  const lateFee = centreData.lateFee;
+  const centerName = centreData?.centreName ?? centreData?.centre ?? "";
+  const regularRegistrationEndDate = new Date(centreData?.lateFeeStart || 0);
+  const regularFee = centreData?.amount ?? 0;
+  const lateFee = centreData?.lateFee;
 
-  // const calculateTotalFee = () => registrationFee;
-  // const calculateTotalFee = () => {
-  //   if (playerInfo.participantType === "volunteer-free") {
-  //     return 0;
-  //   }
-  //   const currentDate = new Date();
-  //   return currentDate <= regularRegistrationEndDate ? regularFee : lateFee;
-  // };
   const calculateTotalFee = () => {
-    if (centreData.lateFeeFeature) {
-      const currentDate = new Date();
-      const lateFeeStartDate = new Date(centreData.lateFeeStart);
-
-      if (currentDate >= lateFeeStartDate) {
-        return lateFee;
-      } else {
-        return registrationFee;
-      }
+    if (playerInfo.participantType === "volunteer-free") {
+      return 0;
     }
-    return registrationFee;
-  }
+    const currentDate = new Date();
+    if (lateFee != null && currentDate > regularRegistrationEndDate) {
+      return lateFee;
+    }
+    return regularFee;
+  };
 
-  // const totalFee = 30;
   const totalFee = calculateTotalFee();
 
   const backendHost = process.env.REACT_APP_BACKENDHOST;
@@ -141,17 +130,19 @@ const SummaryPage = ({
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <h2 className="text-3xl font-bold mb-6 text-center text-[rgb(1,55,100)]">
+    <div className="max-w-4xl mx-auto p-6 sm:p-8 bg-white/95 backdrop-blur shadow-2xl rounded-2xl">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-white bg-gradient-to-r from-[rgb(1,55,100)] to-[rgb(1,75,130)] p-4 rounded-xl shadow-lg flex items-center justify-center gap-3">
+        <span className="text-2xl">💳</span>
         Registration Summary
       </h2>
 
       {/* Player Section */}
-      <section className="mb-8 border-b pb-6">
-        <h3 className="text-2xl font-semibold mb-4 text-[rgb(1,55,100)]">
+      <section className="mb-8 pb-6">
+        <h3 className="text-xl font-semibold mb-4 text-[rgb(1,55,100)] flex items-center gap-2">
+          <span className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center">👤</span>
           Player Information
         </h3>
-        <div className="border rounded-lg p-6 bg-gray-50 shadow-md">
+        <div className="rounded-xl p-6 bg-gradient-to-br from-gray-50 to-gray-100 shadow-inner border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 gap-x-8">
             <div className="flex flex-col">
               <span className="font-semibold text-[rgb(1,55,100)]">
@@ -245,7 +236,7 @@ const SummaryPage = ({
                   onError={handlePaymentError}
                 />
                 <p className="text-sm text-gray-600 mt-2">
-                  Payment is Secured with SQUARE Payment. BAPS Inc does
+                  Payment is Secured with SQUARE Payment. BAPS Charities does
                   not store Credit Card information.
                 </p>
               </>
@@ -254,20 +245,30 @@ const SummaryPage = ({
               <p className="text-blue-500">Processing payment...</p>
             )}
             {paymentStatus === "success" && (
-              <div className="text-center">
-                <h3 className="text-2xl font-semibold mb-4 text-green-600">
-                  Registration Successful!
+              <div className="text-center py-8">
+                <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
+                  <svg className="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-green-600">
+                  Registration Successful! 🎉
                 </h3>
-                <p className="text-lg">
-                  Your confirmation ID is:{" "}
-                  <span className="font-bold">{confirmationId}</span>
+                <p className="text-lg text-gray-700 mb-2">
+                  Your confirmation ID is:
                 </p>
-                <p className="mt-2">Please save this ID for your records.</p>
+                <p className="text-2xl font-bold text-[rgb(1,55,100)] bg-gray-100 inline-block px-6 py-2 rounded-lg mb-4">
+                  {confirmationId}
+                </p>
+                <p className="text-gray-500 mb-6">Please save this ID for your records.</p>
                 <button
                   onClick={() => window.open(receiptUrl, "_blank")}
-                  className="mt-6 bg-[rgb(1,55,100)] text-white px-6 py-2 rounded hover:from-orange-400 hover:to-slate-700 transition duration-300"
+                  className="bg-gradient-to-r from-[rgb(1,55,100)] to-[rgb(1,75,130)] text-white px-8 py-3 rounded-xl hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 mx-auto"
                 >
-                  Click Here for Payment Confirmation
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  View Payment Receipt
                 </button>
               </div>
             )}
